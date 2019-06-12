@@ -9,8 +9,6 @@ def decode(ciphertext, key=3):
 	plaintext = ''
 
 	if key == 'brute':
-		print('Try to find the suitable rotation below: ')
-
 		# Create dict {key:decode(key) x 25}
 		brute = {key:decode(ciphertext, key=key) for key in range(1, 26)}
 
